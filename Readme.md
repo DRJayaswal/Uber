@@ -40,9 +40,8 @@ The response body should be a JSON object containing the following fields:
     "token": "eyJhbGciOiJIUzI1NiIsInR5cC"       
 }
 ```
-
 # /users/login
-
+This endpoint allows existing users to login by providing their credentials. Upon successful authentication, a JWT token is generated for the user.
 ## 1. HTTP Method
 - **POST** `/users/login`
 
