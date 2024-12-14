@@ -3,7 +3,7 @@
 
 This endpoint allows new users to register by providing their details. Upon successful registration, a JWT token is generated for the user.
 
-## Request Method
+## HTTP Method
 - **POST** `/users/register`
 
 ## Request Body
