@@ -50,3 +50,7 @@ module.exports.loginUser = async (req, res) => {
     const token = user.generateAuthToken();
     res.status(200).json({ token,user });
 }
+
+module.exports.userProfile = async (req, res) => {
+    
+}
