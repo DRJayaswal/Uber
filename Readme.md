@@ -10,14 +10,14 @@ This endpoint allows new users to register by providing their details. Upon succ
 The request body should be a JSON object containing the following fields:
 
 ```json
-{                                   // object
-  "fullName": {                     // object
-    "firstName": "John",            // string
-    "lastName": "Doe"               // string
+{                                   
+  "fullName": {                     
+    "firstName": "John",            
+    "lastName": "Doe"               
   },
-  "email": "john.doe@example.com",  // string
-  "password": "password123",        // string
-  "socketId": "socket1234"          // string
+  "email": "john.doe@example.com",  
+  "password": "password123",        
+  "socketId": "socket1234"          
 }
 ```
 
@@ -25,19 +25,19 @@ The request body should be a JSON object containing the following fields:
 The response body should be a JSON object containing the following fields:
 
 ```json
-{                                               // object
-    "user": {                                   // object
-        "fullName": {                           // object
-            "firstName": "John",                // string
-            "lastName": "Doe"                   // string
+{                                               
+    "user": {                                   
+        "fullName": {                           
+            "firstName": "John",                
+            "lastName": "Doe"                   
         },
-        "email": "john.doe@example.com",        // string
-        "password": "$2b$10$ocpxbyA/OGWon5F9",  // string
-        "socketId": "socket1234",               // string
-        "_id": "675d28b3e084cfdc9c4e864f",      // string
+        "email": "john.doe@example.com",        
+        "password": "$2b$10$ocpxbyA/OGWon5F9",  
+        "socketId": "socket1234",               
+        "_id": "675d28b3e084cfdc9c4e864f",      
         "__v": 0
     },
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cC"       // string
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cC"       
 }
 ```
 
@@ -51,9 +51,9 @@ The response body should be a JSON object containing the following fields:
 The request body should be a JSON object containing the following fields:
 
 ```json
-{                                   // object
-  "email": "john.doe@example.com",  // string
-  "password": "password123",        // string
+{                                   
+  "email": "john.doe@example.com",  
+  "password": "password123",        
 }
 ```
 
@@ -61,18 +61,18 @@ The request body should be a JSON object containing the following fields:
 The response body should be a JSON object containing the following fields:
 
 ```json
-{                                               // object
-    "user": {                                   // object
-        "fullName": {                           // object
-            "firstName": "John",                // string
-            "lastName": "Doe"                   // string
+{                                               
+    "user": {                                   
+        "fullName": {                           
+            "firstName": "John",                
+            "lastName": "Doe"                   
         },
-        "email": "john.doe@example.com",        // string
-        "password": "$2b$10$ocpxbyA/OGWon5F9",  // string
-        "socketId": "socket1234",               // string
-        "_id": "675d28b3e084cfdc9c4e864f",      // string
+        "email": "john.doe@example.com",        
+        "password": "$2b$10$ocpxbyA/OGWon5F9",  
+        "socketId": "socket1234",               
+        "_id": "675d28b3e084cfdc9c4e864f",      
         "__v": 0
     },
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cC"       // string
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cC"       
 }
 ```
