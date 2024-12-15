@@ -1,6 +1,7 @@
 # Backend API Endpoint Documentation 
 # /users/register
 
+
 This endpoint allows new users to register by providing their details. Upon successful registration, a JWT token is generated for the user.
 
 ## 1. HTTP Method
@@ -41,7 +42,8 @@ The response body should be a JSON object containing the following fields:
 }
 ```
 # /users/login
-This endpoint allows existing users to login by providing their credentials. Upon successful authentication, a JWT token is generated for the user.
+This endpoint allows existing users to log in by providing their credentials. Upon successful authentication, a JWT token is generated for the user.
+
 ## 1. HTTP Method
 - **POST** `/users/login`
 
@@ -73,5 +75,29 @@ The response body should be a JSON object containing the following fields:
         "__v": 0
     },
     "token": "eyJhbGciOiJIUzI1NiIsInR5cC"       
+}
+```
+
+# /users/logout
+This endpoint allows existing users to log out by using the existing token from cookies or the authorization token. Upon successful logout, the token is blacklisted for security efficiency.
+## 1. HTTP Method
+- **POST** `/users/logout`
+
+
+## 2. Response Body
+The response body on successful logout:
+
+```json
+{
+    "message": "Logged out"
+}
+```
+
+## 3. Response Body
+The response body on already logout state:
+
+```json
+{
+    "message": "Already logged out"
 }
 ```

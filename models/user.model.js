@@ -28,10 +28,8 @@ const userSchema = new mongoose.Schema({
     },
     socketId: {
         type: String,
-        default:null,
-        required: true
     }
-})
+},{timestamps:true})
 
 
 userSchema.methods.generateAuthToken = function () {
