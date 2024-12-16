@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const BlackListTokenModel = new mongoose.Schema({
+const BlackToken = new mongoose.Schema({
 token: {
         type: String,
         required: true,
@@ -12,4 +12,4 @@ token: {
     },
 })
 
-module.exports = mongoose.model("BlackListTokenModel",BlackListTokenModel);
+module.exports = mongoose.model("BlackToken",BlackToken);
