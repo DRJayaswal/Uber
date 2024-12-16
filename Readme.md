@@ -2,6 +2,8 @@
 
 # |---------------------------------------------------|
 
+# User Endpoints
+
 # /users/register
 This endpoint allows new users to register by providing their required details, such as name, email, and password. Upon successful registration, the user’s data is securely stored, and they can proceed to log in and access personalized features.
 
@@ -129,6 +131,8 @@ The response body while user is logged in.
 ```
 
 # |---------------------------------------------------|
+
+# Captain Endpoints
 
 # /captains/register
 This endpoint allows new captains to register by providing their required details, such as name, email, and password. Upon successful registration, the user’s data is securely stored, and they can proceed to log in and access personalized features.
